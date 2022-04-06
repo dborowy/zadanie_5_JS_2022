@@ -32,13 +32,13 @@
 
 function logSubmit(event) {
   event.preventDefault();
-  const email = document.getElementById('exampleInputEmail1').value
-  const name = document.getElementById('exampleInputName1').value
-  const surname = document.getElementById('exampleInputSurname1').value
-  db.collection("users").add({
-    email: email,
-    name: name,
-    surname: surname
+  const producent = document.getElementById('Make').value
+  const model = document.getElementById('Model').value
+  const liczba = document.getElementById('Quantity').value
+  db.collection("telefony").add({
+    producent: producent,
+    model: model,
+    liczba: liczba
     })
     .then((docRef) => {
         console.log("Document written with ID: ", docRef.id);
