@@ -12,40 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-  <script type='text/javascript' src='./js/submit.js'></script>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-    
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyDWzWom-MZxx_6tiNdHz67AR-ZLW7VWLkI",
-      authDomain: "zadanie-5-12395.firebaseapp.com",
-      projectId: "zadanie-5-12395",
-      storageBucket: "zadanie-5-12395.appspot.com",
-      messagingSenderId: "734926560610",
-      appId: "1:734926560610:web:0779b00ddcb48d23c3203b"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    firebase.initializeApp(firebaseConfig)
-    const db = firebase.firestore();
-    // db.collection("users").add({
-    // first: "Ada",
-    // last: "Lovelace",
-    // born: 1815
-    // })
-    // .then((docRef) => {
-    //     console.log("Document written with ID: ", docRef.id);
-    // })
-    // .catch((error) => {
-    //     console.error("Error adding document: ", error);
-    // });
-  </script>
+
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
   
 </head>
@@ -68,4 +35,6 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </body>
+<script type='module' src='./js/submit.js'></script>
+
 </html>
